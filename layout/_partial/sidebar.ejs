@@ -1,0 +1,24 @@
+<div class="sidebar">
+	<ul>
+		<% for (var i in theme.menu){ %>
+			<li>
+				<a href="<%- url_for(theme.menu[i].url) %>" class="<%- is_current(url_for(theme.menu[i].url)) ? 'active' : '' %>">
+					<i class="<%= theme.menu[i].iconType %> fa-<%= theme.menu[i].icon %>"></i> 
+					<span><%= i %></span>
+				</a>
+				<% if(theme.menu[i].child){ %>
+					<span class="drop-flag fa fa-angle-down"></span>
+					<ul style="display: none">
+						<% for (var f in theme.menu[i].child){ %>
+							<a href="<%- url_for(theme.menu[i].child[f].url) %>" class="">
+								<i class="<%= theme.menu[i].child[f].iconType %> fa-<%= theme.menu[i].child[f].icon %>"></i>
+								<span><%= f %></span>
+							</a>
+						<% } %>
+					</ul>
+				<% } %>
+			</li>
+		<% } %>
+	</ul>
+	<div class="light-area"></div>
+</div>

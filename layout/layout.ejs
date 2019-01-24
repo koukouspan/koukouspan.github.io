@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html<% if(config.language){ %> lang="<%= config.language %>" <% } %>>
+<%- partial('_partial/head') %>
+
+<body>
+	<%- partial('_partial/ie', {}, {cache: true}) %>
+	<%- partial('_partial/sidebar') %>
+	<div class="main-con">
+		<% if(!is_home()){ %>
+			<%- partial('_partial/media_menu.ejs') %>
+		<% } %>
+		<%- body %>
+		<%- partial('_partial/extend',{}, {cache: true}) %>
+		<%- partial('_partial/footer',{}, {cache: true}) %>
+	</div>
+	<% if(is_home()||is_archive()||is_category()||is_tag()){ %>
+		<%- partial('_partial/toolbar') %>
+	<% }else{ %>
+		<% if (page.tocifs){ %>
+			<%- partial('_partial/toolbar_post') %>
+		<% }else{ %>
+			<%- partial('_partial/toolbar') %>
+		<% } %>
+	<% } %>
+	<%- js('js/org/jquery.min.js') %>
+    <%- js('js/extend.js') %>
+</body>
+</html>

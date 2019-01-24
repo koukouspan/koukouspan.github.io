@@ -1,0 +1,54 @@
+<article class="article article-inner cl">
+    <%
+        if(!item.title) item.title = "Empty title";
+        var letter = item.title.substr(0, 1);
+    %>
+    <% if(item.photos.length){ %>
+    <div class="article-head" id="fallEle" style="background-image:url('<%= item.photos[0] %>')">
+        <h2 class="article-title" style="text-shadow: 0px 0px 10px #5a5a5a">
+            <%- item.title %>
+        </h2>
+    <% }else{ %>
+    <div class="article-head" id="fallEle" style="background-color: #667800">
+        <div class="head-letter"><%- letter %></div>
+        <h2 class="article-title">
+            <%- item.title %>
+        </h2>
+    <% } %>
+    </div>
+    <div class="article-block">
+        <div class="inner-con">
+            <div class="article-wrap cl">
+                <div class="article-inner-con">
+                    <%- item.content %>
+                </div>
+                <ul class="tags-list cl">
+                    <%
+                        for(var i=0; i< item.tags.data.length; i++){
+                    %>
+                        <li><a href="/tags/<%= item.tags.data[i].name %>">#<%= item.tags.data[i].name %></a></li>
+                    <%
+                        }
+                    %>
+                </ul>
+                <%- partial('_partial/comment') %>
+            </div>
+        </div>
+    </div>
+    <div class="article-navgition">
+        <div class="navgition-wrap">
+            <% if(item.prev){ %>
+                <div class="navgition-prev">
+                    <h2 class="navgition-title"><i class="fa fa-chevron-left"></i> <a href="<%- url_for(item.prev.path) %>"> <%= item.prev.title %> </a></h2>
+                    <p class="navgition-description"></p>
+                </div>
+            <% } %>
+            <% if(item.next){ %>
+                <div class="navgition-next">
+                    <h2 class="navgition-title"><a href="<%- url_for(item.next.path) %>"> <%= item.next.title %> </a> <i class="fa fa-chevron-right"></i></h2>
+                    <p class="navgition-description"></p>
+                </div>
+            <% } %>
+        </div>
+    </div>
+</article>

@@ -1,0 +1,29 @@
+<article class="article">
+    <div class="article-wrap">
+        <div class="article-time cl">
+            <i class="fa fa-calendar"></i>
+            <%= item.date.format(config.date_format) %>
+        </div>
+        <h2 class="article-title cl">
+            <a href="<%- config.root %><%- item.path %>" title="<%- item.title ? item.title : "Empty title" %>"><%- item.title ? item.title : "Empty title" %></a>
+        </h2>
+        <div class="article-description">
+            <%
+                var str;
+                if(item.excerpt)
+                    str = item.excerpt;
+                else
+                    str = item.content;
+            %>
+            <%- str %>
+        </div>
+        <a href="<%- config.root %><%- item.path %>" class="more-link"><%= __('more') %> &gt;&gt;</a>
+        <div class="article-tags">
+            <ul class="tags-list cl">
+                <%for(var i=0; i< item.tags.data.length; i++){%>
+                <li><a href="/tags/<%= item.tags.data[i].name %>/"><i class="fa fa-tag"></i><%= item.tags.data[i].name %></a></li>
+                <%}%>
+            </ul>
+        </div>
+    </div>
+</article>

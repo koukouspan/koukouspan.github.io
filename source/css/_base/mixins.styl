@@ -1,0 +1,18 @@
+// ------------------------------
+// 混合样式
+// ------------------------------
+
+border(direction=all, args=1px dotted $border_color)
+    if direction == all
+        border: args
+    else
+        border-{direction}: args
+text-shadow(args=0px 0px 10px $shadow_color)
+    text-shadow: args
+transition(attr=all,time=0.4s)
+    -webkit-transition: attr time
+    -moz-transition: attr time
+    -o-transition: attr time
+    transition: attr time
+
+

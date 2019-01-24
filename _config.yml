@@ -1,0 +1,29 @@
+# 站点相关
+name: 站点名称
+description: 站点描述
+favicon:
+banner: http://plo9kpis3.bkt.clouddn.com/head.jpg
+# 导航相关
+menu:
+  首页:
+    url: /
+    icon: home
+    iconType: fa
+  归档:
+    url: /archives/
+    icon: archive
+    iconType: fa
+# 账户相关
+account:
+  github:
+    url: /
+    icon: github
+    iconType: fa
+  mail:
+    url: /
+    icon: envelope
+    iconType: fa
+  twitter:
+    url: /
+    icon: twitter
+    iconType: fa

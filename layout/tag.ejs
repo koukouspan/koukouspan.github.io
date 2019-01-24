@@ -1,0 +1,14 @@
+<div class="column-head" id="fallEle" style="background-image: url(<%- theme.banner %>)">
+    <h2 class="column-title">
+        <i class="fa fa-tag"></i>
+        <%= page.tag %>
+    </h2>
+</div>
+<div id="con-wrap">
+    <div class="content">
+        <% page.posts.each(function(item){ %>
+            <%- partial('_partial/article', {item: item}) %>
+        <% }) %>
+    </div>
+</div>
+<%- partial('_partial/pagination') %>

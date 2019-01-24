@@ -1,0 +1,40 @@
+// ------------------------------
+// 首页Banner区域
+// ------------------------------
+
+.top
+    position relative
+    @extend .background
+    .top-info
+        padding $wrap_margin
+        position relative
+        z-index 10
+    .site-name
+        float left
+        font-size: $column_text_size
+        font-weight bold
+        text-shadow()
+        small
+            display block
+            color #ffffff
+            font-size 14px
+            font-weight normal
+        a
+            color #fff
+            display block
+            transition()
+            &:hover
+                transform scale(1, -1)
+    .account-list
+        float right
+        margin-top 45px
+        li
+            display inline-block
+            margin 0px 10px
+            a
+                text-shadow()
+                font-size 20px
+                color #ffffff
+                transition(color)
+                &:hover
+                    color $theme_color

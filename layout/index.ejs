@@ -1,0 +1,8 @@
+<%- partial('_partial/top',{}, {cache: true}) %>
+<div id="con-wrap">
+    <% page.posts.each(function(item){ %>
+        <%- partial('_partial/article', {item: item}) %>
+    <% }) %>
+</div>
+<%- partial('_partial/pagination') %>
+
