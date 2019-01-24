@@ -1,7 +1,7 @@
-<div style="text-align: center">
-    <h1><b>🏵️ Mokusei</b></h1>
-    一个响应式深色三栏主题
-</div>
+
+<h1 align="center">Mokusei</h1>
+<p align="center">一个响应式深色三栏主题</p>
+
 
 
 
@@ -108,7 +108,7 @@ account:
 
 #### 如何开启文章目录？
 
-（文章目录获取仅出现在文章内容中含有<h1>~<h6>标签时）
+（文章目录获取仅出现在文章内容中含有<coded><h1>~<h6></code>标签时）
 
 编辑文章的md文件，在头部区域添加一行代码 <code>tocifs: true</code>，供参考栗子：
 
