@@ -1,23 +1,13 @@
-
-<h1 align="center">Mokusei</h1>
-<p align="center">一个响应式深色三栏主题</p>
+# Hexo-theme-mokusei
 
 
 
 
 ## 介绍
 
-桂花（Mokusei）是一个深色系的Hexo主题，它致力于打造一个安静的阅读环境。
+Mokusei是一个深色系的Hexo主题，它致力于打造一个安静的阅读环境。
 
 [预览地址](https://blog.shijukun.com) 
-
-
-
-## 界面
-
-![](./asset/pre.png)
-
-
 
 ## 特点
 
@@ -32,8 +22,6 @@
 * Javascript 粒子动画
 * 多语言
 
-
-
 ## 安装
 
 ```
@@ -42,8 +30,6 @@ git clone https://github.com/shijuuu/hexo-theme-mokusei.git themes/mokusei
 
 修改博客根目录下的<code>_config.yml</code>的<code>theme</code>选项为mokusei
 
-
-
 ## 更新
 
 ```
@@ -51,24 +37,49 @@ cd themes/mokusei
 git pull
 ```
 
-
-
 ## 主题配置
 
-| 选项        | 描述                                                         |
-| ----------- | ------------------------------------------------------------ |
-| name        | 站点名称（文本）用于显示顶部大图中站点信息                   |
-| description | 站点描述（文本）用于显示顶部大图中站点信息                   |
-| favicon     | 浏览器标题栏ICON图标（图片）相对路径/绝对路径                |
-| banner      | 网站顶部大图（图片）相对路径/绝对路径                        |
-| menu        | 网站导航（数组）每个数组项对应侧边栏相应的导航项，二级数组形成二级导航 |
-| account     | 社交账户（数组）每个数组项为一个账户                         |
+```yaml
+# 站点相关
+name: 站点名称           
+description: 站点描述
+favicon:
+banner: http://plo9kpis3.bkt.clouddn.com/head.jpg
+rss:  
 
+# 导航相关
+menu:
+  首页:
+    url: /
+    icon: home
+    iconType: fa
+  归档:
+    url: /archives/
+    icon: archive
+    iconType: fa
 
+# 社交账户
+account:
+  github:
+    url: /
+    icon: github
+    iconType: fa
+  mail:
+    url: /
+    icon: envelope
+    iconType: fa
+  twitter:
+    url: /
+    icon: twitter
+    iconType: fa
+
+  # 评论系统
+comment:
+  disqus:
+    shortname:  
+```
 
 ## 常见问题
-
-
 
 #### 如何添加导航项？
 
@@ -88,8 +99,6 @@ menu:
 
 （添加社交账户同上，修改account选项）
 
-
-
 #### 如何更改字体图标？
 
 [Font awesome](http://www.fontawesome.com.cn/faicons/) 在这个网站内找到钟意的图标，获得它的图标class值，如<code>fa-user</code>
@@ -104,11 +113,7 @@ account:
     iconType: fa
 ```
 
-
-
 #### 如何开启文章目录？
-
-（文章目录获取仅出现在文章内容中含有<coded><h1>~<h6></code>标签时）
 
 编辑文章的md文件，在头部区域添加一行代码 <code>tocifs: true</code>，供参考栗子：
 
@@ -119,8 +124,6 @@ date: 2019-01-21 09:28:48
 tocifs: true
 ---
 ```
-
-
 
 #### 如何设置文章封面?
 
@@ -137,21 +140,10 @@ photos:
 ---
 ```
 
-
-
 ## 参考
 
 参考了<code>clean-blog</code>和<code>landscape</code>主题，感谢！
 
-
-
 ## 问题反馈
 
 [ISSUE](https://github.com/shijuuu/hexo-theme-mokusei/issues/)
-
-
-
-
-
-
-
