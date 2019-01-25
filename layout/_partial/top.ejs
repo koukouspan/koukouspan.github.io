@@ -5,7 +5,7 @@
 		<ul class="account-list">
 			<% for (var i in theme.account){ %>
 				<li>
-					<a href="<%- url_for(theme.account[i].url) %>" class="<%- is_current(url_for(theme.account[i].url)) ? 'active' : '' %>" target="_blank">
+					<a href="<%- url_for(theme.account[i].url) %>"  title="<%= i %>" class="<%- is_current(url_for(theme.account[i].url)) ? 'active' : '' %>" target="_blank">
 						<i class="<%= theme.account[i].iconType %> fa-<%= theme.account[i].icon %>"></i>
 					</a>
 				</li>
