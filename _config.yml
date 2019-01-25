@@ -3,6 +3,8 @@ name: 站点名称
 description: 站点描述
 favicon:
 banner: http://plo9kpis3.bkt.clouddn.com/head.jpg
+rss:  12321
+
 # 导航相关
 menu:
   首页:
@@ -13,7 +15,8 @@ menu:
     url: /archives/
     icon: archive
     iconType: fa
-# 账户相关
+
+# 社交账户
 account:
   github:
     url: /
@@ -27,3 +30,10 @@ account:
     url: /
     icon: twitter
     iconType: fa
+
+  # 评论系统
+comment:
+  disqus:
+    shortname:  shiju
+
+
