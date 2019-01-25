@@ -154,7 +154,7 @@ Extend.prototype = {
         var eleButton = $("#media-toggle");
         var eleMain = $(".main-con");
         var ifs;
-        eleButton.on("click", function(){
+        eleButton.on("tap", function(){
             if(!ifs){
                 eleMain.animate({
                     'left': '200px'
