@@ -1,7 +1,8 @@
 <h1 align="center">Mokusei</h1>
 <p align="center">Mokusei is a dark Hexo theme that is dedicated to creating a quiet reading environment.</p>
 
-[Preview](https://blog.shijukun.com)   [中文文档](#) 
+[Preview](https://blog.shijukun.com)   
+[中文文档](#) 
 
 ## Feature
 
