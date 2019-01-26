@@ -2,10 +2,12 @@
 // 多端响应适配
 // ------------------------------
 
-@media screen and (max-width:1100px)
+@media screen and (max-width:960px)
     html
     body
         height auto
+    .extra-padding
+        padding-top 80px !important
     .sidebar
         width 200px
         display block
@@ -14,9 +16,15 @@
         top 0
         z-index 1
         height 100%
+        > ul
+            > li
+                a
+                    padding-left 0px
+                    padding-right 0px
+                    text-align center
     .main-con
         width 100%
-        float none
+        margin 0px
         position relative
         z-index 20
         #con-wrap
@@ -37,10 +45,12 @@
                 .site-name
                     a
                         display inline
+                        font-size 32px
                     text-align center
                     small
                         display none
             #media-toggle
+                transition()
                 display block !important
                 position absolute
                 top 50%
@@ -57,29 +67,37 @@
                 margin $wrap_margin_media
         .column-head
             padding $wrap_margin_media
+        .archive-year
+            margin 30px 0px
     .toolbar
         width 100%
-        float none
+        position relative
     .article-dirname
         display none
     .media-menu_child
+        height 50px
+        line-height 50px
         display block !important
-        background-color $theme_color
-        position relative
+        position absolute
+        top 0
+        left 0
+        width 100%
+        background-color rgba(0,0,0,0.2)
+        z-index  20
         #media-toggle
             display block !important
             position absolute
             top 50%
-            left 20px
+            left 50px
             margin-top -11px
             color #fff
-            font-size 22px
+            font-size 20px
             z-index 11
         .menu-name
-            padding 10px 0px
-            text-align center
+            text-align right
+            padding-right 50px
             a
-                font-size 24px
+                font-size 20px
                 color #fff
     #extend-tools
         display none !important
