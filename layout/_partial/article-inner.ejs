@@ -4,14 +4,14 @@
         var letter = item.title.substr(0, 1);
     %>
     <% if(item.photos.length){ %>
-    <div class="article-head" id="fallEle" style="background-image:url('<%= item.photos[0] %>')">
-        <h2 class="article-title" style="text-shadow: 0px 0px 10px #5a5a5a">
+    <div class="article-head extra-padding" id="<%- theme.ifsparticle ? 'fallEle' : ''%>" style="background-image:url('<%= item.photos[0] %>')">
+        <h2 class="article-title fade" style="text-shadow: 0px 0px 10px #5a5a5a">
             <%- item.title %>
         </h2>
     <% }else{ %>
-    <div class="article-head" id="fallEle" style="background-color: #667800">
+    <div class="article-head extra-padding" id="<%- theme.ifsparticle ? 'fallEle' : '' %>"  style="background-color: #667800">
         <div class="head-letter"><%- letter %></div>
-        <h2 class="article-title">
+        <h2 class="article-title fade">
             <%- item.title %>
         </h2>
     <% } %>
