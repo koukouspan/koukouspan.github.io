@@ -3,9 +3,9 @@ function Extend(){}
 Extend.prototype = {
     "init": function(){
         this.showBar();
-        this.fall();
         this.menuDown();
         this.light();
+        this.fall();
         this.scrollAddEvent();
         this.mediaMenu();
     },
@@ -28,6 +28,7 @@ Extend.prototype = {
     },
     "fall": function() {
         var fallEle = document.getElementById("fallEle");
+        if(!fallEle) return;
         var canvas = document.createElement("canvas");
         canvas.style.position = "absolute";
         canvas.style.top = "0";
@@ -154,7 +155,7 @@ Extend.prototype = {
         var eleButton = $("#media-toggle");
         var eleMain = $(".main-con");
         var ifs;
-        eleButton.on("tap", function(){
+        eleButton.on("click", function(){
             if(!ifs){
                 eleMain.animate({
                     'left': '200px'
