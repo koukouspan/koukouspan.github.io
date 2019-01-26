@@ -1,7 +1,7 @@
 <h1 align="center">Mokusei</h1>
 <p align="center">Mokusei is a dark Hexo theme that is dedicated to creating a quiet reading environment.</p>
 
-[预览地址](https://blog.shijukun.com) 
+[Preview](https://blog.shijukun.com)   [中文文档](#) 
 
 ## Feature
 
@@ -71,7 +71,7 @@ comment:
     shortname:  
 ```
 
-## 常见问题
+## Common problem
 
 
 ### How to open the article directory?
@@ -86,7 +86,7 @@ tocifs: true
 ---
 ```
 
-#### How to set the article cover?
+### How to set the article cover?
 
 Edit the md file of the article, add a piece of code <code>photos</code> in the header area, reference example:
 
