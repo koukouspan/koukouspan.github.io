@@ -1,13 +1,13 @@
-# 站点相关
+# site
 name: 站点名称
 description: 站点描述
 favicon:
-banner: http://plo9kpis3.bkt.clouddn.com/head.jpg
-rss:  12321
+banner: /imgs/head.jpg
+rss:  
 
-# 导航相关
+# navigation
 menu:
-  首页:
+  主页:
     url: /
     icon: home
     iconType: fa
@@ -15,8 +15,16 @@ menu:
     url: /archives/
     icon: archive
     iconType: fa
-
-# 社交账户
+  分类:
+    url: javascript:void(0)
+    icon: folder-open
+    iconType: fa
+    child:
+      分类1:
+        url: javascript:void(0)
+        icon: category
+        iconType: fa
+# Social account
 account:
   github:
     url: /
@@ -31,9 +39,13 @@ account:
     icon: twitter
     iconType: fa
 
-  # 评论系统
+  # Comment system
 comment:
   disqus:
     shortname:  shiju
+  
+  # Features
+ifsparticle:  false
 
-
+# Child theme
+childtheme: 1
