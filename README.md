@@ -105,6 +105,10 @@ photos:
 
 参考了<code>clean-blog</code> 和 <code>landscape</code> 主题, 感谢！
 
+## 贡献
+
+期待你的贡献！
+
 ## 问题提交
 
 [ISSUE](https://github.com/shijuuu/hexo-theme-mokusei/issues/)
