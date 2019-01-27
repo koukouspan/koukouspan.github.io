@@ -48,24 +48,29 @@ body
             border(bottom)
         blockquote
             border(left, 1px solid $theme_color)
-            background-color $eee
+            background-color #fff
         a
             color $text_color
-        .highlight
-        code
-            border()
-            background-color  #eee
-        .highlight
-            .gutter
-                color $text_color
-        hr
-            background-color $text_color
         table
             td
             th
                 border()
             th
                 background  $text_color
+    .highlight
+    code
+        border()
+        background-color #fff
+    .highlight
+        margin 20px 0px
+        .gutter
+            color $text_color
+        table
+            td
+            th
+                border(all, none)
+        hr
+            background-color $text_color
     .more-link
         color $text_color
     .article-navgition
@@ -125,6 +130,8 @@ body
     .dirname-list
         a
             border(bottom)
+            &.active
+                color $text_color
     .dirname-title
         color $text_color
         border(bottom)
