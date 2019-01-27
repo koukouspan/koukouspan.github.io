@@ -1,46 +1,45 @@
 <h1 align="center">Mokusei</h1>
-<p align="center">Mokusei is a dark Hexo theme that is dedicated to creating a quiet reading environment.</p>
+<p align="center">桂花是一个深色的Hexo主题，它致力于提供安静的阅读环境</p>
 
 [Preview](https://blog.shijukun.com)   
-[中文文档](#) 
+[English document](./doc/en/README.md) 
 
-## Feature
+## 特征
 
-* Three-column layout
-* Comment system (Disqus)
-* Icon customization
-* Social account
-* Article directory (rolling monitor)
-* Focus mode (hidden sidebar)
-* Article cover
-* Particle animation
-* Multi-language
+* 三栏布局
+* 评论系统（Disqus）
+* 图标自定义
+* 社交账号设置
+* 文章目录（滚动监听）
+* 专注模式
+* 文章封面
+* 粒子动画
+* 多语言（国际化）
 
-## Installation
+## 安装
 
 ```
 git clone https://github.com/shijuuu/hexo-theme-mokusei.git themes/mokusei
 ```
-Modify the <code>theme</code> option of <code>_config.yml</code> in the root directory of the blog to mokusei
+修改位于博客根目录下的<code>_config.yml</code>内的<code>theme</code>选项值为<code>Mokusei</code>
 
-## Update
+## 更新
 
 ```
 cd themes/mokusei
 git pull
 ```
 
-## Theme configuration
+## 主题配置
 
 ```yaml
-# site
-name: Site name    
-description: Site description
-favicon:
-banner: http://plo9kpis3.bkt.clouddn.com/head.jpg
+# 站点设置
+name: 站点名称
+description: 站点描述
+favicon: 地址栏图标
+banner: 头图
 rss:  
-
-# navigation
+# 导航设置
 menu:
   Home:
     url: /
@@ -50,34 +49,32 @@ menu:
     url: /archives/
     icon: archive
     iconType: fa
-
-# Social account
+# 社交账号设置
 account:
   github:
     url: /
     icon: github
     iconType: fa
-  mail:
-    url: /
-    icon: envelope
-    iconType: fa
   twitter:
     url: /
     icon: twitter
     iconType: fa
-
-  # Comment system
+# 评论系统
 comment:
   disqus:
     shortname:  
+# 功能开关
+ifsparticle:  false   # 是否显示粒子动画
+# Child theme
+childtheme: 0 # 切换子主题 0 -深色    1- 浅色
 ```
 
-## Common problem
+## 主题功能配置
 
 
-### How to open the article directory?
+### 开启文章目录
 
-Edit the md file of the article and add a line of code <code>tocifs: true</code> to the header are, reference example:
+编辑文章的MD文件，在头部加上<code>tocifs: true</code> ，如下：
 
 ```
 ---
@@ -87,9 +84,9 @@ tocifs: true
 ---
 ```
 
-### How to set the article cover?
+### 设置文章封面
 
-Edit the md file of the article, add a piece of code <code>photos</code> in the header area, reference example:
+编辑文章的MD文件，在头部加上<code>photos</code>，如下：
 
 ```
 ---
@@ -100,10 +97,10 @@ photos:
 ---
 ```
 
-## Reference
+## 参考
 
-Refer to the <code>clean-blog</code> and <code>landscape</code> topics, thanks!
+参考了<code>clean-blog</code> 和 <code>landscape</code> 主题, 感谢！
 
-## Feedback
+## 问题提交
 
 [ISSUE](https://github.com/shijuuu/hexo-theme-mokusei/issues/)
