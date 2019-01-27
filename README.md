@@ -101,6 +101,10 @@ photos:
 ---
 ```
 
+## 第三方库
+
+* 使用了[jQuery.NiceScroll](https://github.com/inuyaksa/jquery.nicescroll)
+
 ## 参考
 
 参考了<code>clean-blog</code> 和 <code>landscape</code> 主题, 感谢！

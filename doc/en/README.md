@@ -100,6 +100,10 @@ photos:
 ---
 ```
 
+## Library
+
+* use [jQuery.NiceScroll](https://github.com/inuyaksa/jquery.nicescroll)
+
 ## Reference
 
 Refer to the <code>clean-blog</code> and <code>landscape</code> topics, thanks!
