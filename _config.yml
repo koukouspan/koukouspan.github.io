@@ -42,10 +42,10 @@ account:
   # Comment system
 comment:
   disqus:
-    shortname:  shiju
+    shortname:  
   
   # Features
 ifsparticle:  false
 
 # Child theme
-childtheme: 1
+childtheme: 0
