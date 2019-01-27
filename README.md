@@ -4,18 +4,6 @@
 [Preview](https://blog.shijukun.com)   
 [English document](./doc/en/README.md) 
 
-## 特征
-
-* 三栏布局
-* 评论系统（Disqus）
-* 图标自定义
-* 社交账号设置
-* 文章目录（滚动监听）
-* 专注模式
-* 文章封面
-* 粒子动画
-* 多语言（国际化）
-
 ## 安装
 
 ```
@@ -29,6 +17,18 @@ git clone https://github.com/shijuuu/hexo-theme-mokusei.git themes/mokusei
 cd themes/mokusei
 git pull
 ```
+
+## 特征
+
+* 三栏布局
+* 评论系统（Disqus）
+* 图标自定义
+* 社交账号设置
+* 文章目录（滚动监听）
+* 专注模式
+* 文章封面
+* 粒子动画
+* 多语言（国际化）
 
 ## 主题配置
 
