@@ -30,6 +30,11 @@ git pull
 * 粒子动画
 * 多语言（国际化）
 
+## 多语言
+
+主题支持11个国家的语言，默认语言为中文。
+更改语言请修改位于博客根目录下的<code>_config.yml</code>内<code>language</code>选项
+
 ## 主题配置
 
 ```yaml
@@ -71,7 +76,6 @@ childtheme: 0 # 切换子主题 0 -深色    1- 浅色
 
 ## 主题功能配置
 
-
 ### 开启文章目录
 
 编辑文章的MD文件，在头部加上<code>tocifs: true</code> ，如下：
@@ -104,3 +108,7 @@ photos:
 ## 问题提交
 
 [ISSUE](https://github.com/shijuuu/hexo-theme-mokusei/issues/)
+
+## 其他
+
+主题内使用图片素材均来自网络，如有侵犯了您的权利，请告知删除。
