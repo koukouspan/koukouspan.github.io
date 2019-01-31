@@ -6,7 +6,7 @@
 ## Installation
 
 ```
-git clone https://github.com/shijuuu/hexo-theme-mokusei.git themes/mokusei
+git clone https://github.com/shijuuu/hexo-theme-mokusei.git themes/Mokusei
 ```
 Modify the <code>theme</code> option value in <code>_config.yml</code> located in the root directory of the blog to <code>Mokusei</code>
 

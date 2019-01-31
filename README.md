@@ -7,7 +7,7 @@
 ## 安装
 
 ```
-git clone https://github.com/shijuuu/hexo-theme-mokusei.git themes/mokusei
+git clone https://github.com/shijuuu/hexo-theme-mokusei.git themes/Mokusei
 ```
 修改位于博客根目录下的<code>_config.yml</code>内的<code>theme</code>选项值为<code>Mokusei</code>
 
