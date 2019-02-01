@@ -69,8 +69,6 @@ comment:
     shortname:  
 # Function switch
 ifsparticle:  false   # Whether to display particle animation
-# Child theme
-childtheme: 0 # Switch child theme 0 -dark    1- light
 ```
 
 ## Theme feature configuration

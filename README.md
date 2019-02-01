@@ -70,8 +70,6 @@ comment:
     shortname:  
 # 功能开关
 ifsparticle:  false   # 是否显示粒子动画
-# Child theme
-childtheme: 0 # 切换子主题 0 -深色    1- 浅色
 ```
 
 ## 主题功能配置
