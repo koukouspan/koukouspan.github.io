@@ -5,19 +5,28 @@
     %>
     <% if(item.photos.length){ %>
     <div class="article-head extra-padding" id="<%- theme.ifsparticle ? 'fallEle' : ''%>" style="background-image:url('<%= item.photos[0] %>')">
-        <h2 class="article-title fade" style="text-shadow: 0px 0px 10px #5a5a5a">
-            <%- item.title %>
-        </h2>
+        <div class="head-wrap fadeToBottom">
+            <h2 class="article-title">
+                <%- item.title %>
+            </h2>
+            <ul class="head-meta">
+                <li><i class="fa fa-calendar"></i> <%= item.date.format(config.date_format) %></li>
+            </ul>
+        </div>
     <% }else{ %>
-    <div class="article-head extra-padding" id="<%- theme.ifsparticle ? 'fallEle' : '' %>"  style="background-color: #667800">
-        <div class="head-letter"><%- letter %></div>
-        <h2 class="article-title fade">
-            <%- item.title %>
-        </h2>
+    <div class="article-head extra-padding" id="<%- theme.ifsparticle ? 'fallEle' : '' %>"  style="background-image:url(/imgs/head.jpg)">
+        <div class="head-wrap fadeToBottom">
+            <h2 class="article-title">
+                <%- item.title %>
+            </h2>
+            <ul class="head-meta">
+                <li><i class="fa fa-calendar"></i> <%= item.date.format(config.date_format) %></li>
+            </ul>
+        </div>
     <% } %>
     </div>
     <div class="article-block">
-        <div class="inner-con">
+        <div class="inner-con fadeToTop">
             <div class="article-wrap cl">
                 <div class="article-inner-con">
                     <%- item.content %>

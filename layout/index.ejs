@@ -1,6 +1,6 @@
 <%- partial('_partial/top',{}, {cache: true}) %>
 
-<div id="con-wrap">
+<div id="con-wrap" class="fadeToTop">
     <% page.posts.each(function(item){ %>
         <%- partial('_partial/article', {item: item}) %>
     <% }) %>

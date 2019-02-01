@@ -1,11 +1,10 @@
 <div class="column-head extra-padding" id="<%- theme.ifsparticle ? 'fallEle' : ''%>" style="background-image: url(<%- theme.banner %>)">
-    <h2 class="column-title fade">
-        <i class="fa fa-archive"></i>
+    <h2 class="column-title fadeToBottom">
         <%= __('archive') %>
     </h2>
 </div>
 <div id="con-wrap">
-    <div class="content">
+    <div class="content fadeToTop">
         <% var old, year %>
         <% page.posts.sort('date', 'desc').each(function(post) { %>
             <%
