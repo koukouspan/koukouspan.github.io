@@ -1,5 +1,5 @@
 # site
-name: 站点名称
+name: Mokusei
 description: 站点描述
 favicon:
 banner: /imgs/head.jpg
@@ -15,15 +15,6 @@ menu:
     url: /archives/
     icon: archive
     iconType: fa
-  分类:
-    url: javascript:void(0)
-    icon: folder-open
-    iconType: fa
-    child:
-      分类1:
-        url: javascript:void(0)
-        icon: category
-        iconType: fa
 # Social account
 account:
   github:
@@ -46,6 +37,3 @@ comment:
   
   # Features
 ifsparticle:  false
-
-# Child theme
-childtheme: 0
