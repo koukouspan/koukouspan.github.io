@@ -32,7 +32,7 @@
         padding-bottom 25px
         overflow hidden
     .article-title a
-        font-size 32px
+        font-size 38px
         font-weight bold
         color $text_color
         &:hover
@@ -76,12 +76,24 @@
             &:hover
                 background-color $theme_color
                 color $text_color
-.fade
-    animation fade 0.8s ease-out
-@keyframes fade {
+.fadeToBottom
+    animation fadeToBottom 0.8s ease-out
+@keyframes fadeToBottom {
     from {
         opacity 0
         transform translate(0, -30px)
+    }    
+    to {
+        opacity 1
+        transform translate(0, 0px)
+    }
+}
+.fadeToTop
+    animation fadeToTop 0.8s ease-out
+@keyframes fadeToTop {
+    from {
+        opacity 0
+        transform translate(0, 30px)
     }    
     to {
         opacity 1

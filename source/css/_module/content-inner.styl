@@ -5,23 +5,23 @@
 .article-inner
     margin-bottom 0px !important
     .article-head
-        padding 50px 150px
+        padding 50px 100px
+        text-align center
         @extend .background
         color #333
         position relative
         overflow hidden
-        .head-letter
-            position absolute
-            font-size 170px
-            width 124px
-            color rgba(0,0,0,0.1)
-            line-height 100%
-            left 50%
-            bottom -50px
-            margin-left -72px
+        text-shadow()
         .article-title
             font-size $column_text_size
-            color #fff
+            color #e1e1e1
+            padding 0
+        .head-meta 
+            li
+                color #e1e1e1
+                font-size 14px
+                i
+                    padding-right 5px
     .inner-con
         overflow hidden
         .article-wrap
@@ -64,7 +64,7 @@
 .article-description
 .article-inner-con
     font-size $text_size
-    line-height 160%
+    line-height 150%
     color $text_color
     letter-spacing 0.5px
     p
@@ -122,6 +122,10 @@
         display block
         max-width 100%
         margin auto
+        transition()
+        opacity 0.8
+        &:hover
+            opacity 1
     table
         width 100%
         border-collapse collapse
@@ -147,7 +151,7 @@
     .dirname-list
         a
             display block
-            padding 20px 50px
+            padding 20px 30px
             font-size $text_size
             color #606060
             overflow : hidden;
@@ -159,7 +163,7 @@
                 color $text_color
     .dirname-title
         font-size 20px
-        padding 40px 50px
+        padding 40px 30px
         border(bottom, 1px solid #1d1d1d)
     .dirname-list-level-1
         > a
