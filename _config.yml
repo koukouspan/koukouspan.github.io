@@ -36,4 +36,4 @@ comment:
     shortname:  
   
   # Features
-ifsparticle:  false
+ifsparticle:  true
