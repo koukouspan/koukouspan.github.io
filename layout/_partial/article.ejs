@@ -1,12 +1,14 @@
 <article class="article">
     <div class="article-wrap">
-        <div class="article-time cl">
-            <i class="fa fa-calendar"></i>
-            <%= item.date.format(config.date_format) %>
-        </div>
         <h2 class="article-title cl">
             <a href="<%- config.root %><%- item.path %>" title="<%- item.title ? item.title : "Empty title" %>"><%- item.title ? item.title : "Empty title" %></a>
         </h2>
+        <div class="article-extra">
+            <div class="article-time cl">
+                <i class="fa fa-calendar"></i>
+                <%= item.date.format(config.date_format) %>
+            </div>
+        </div>
         <div class="article-description">
             <%
                 var str;
