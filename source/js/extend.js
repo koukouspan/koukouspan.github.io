@@ -2,7 +2,7 @@ function Extend(){}
 
 Extend.prototype = {
     "init": function(){
-        this.showBar();
+        // this.showBar();
         this.menuDown();
         this.light();
         this.fall();
