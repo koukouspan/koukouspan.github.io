@@ -3,6 +3,9 @@
 
 [预览](https://blog.shijukun.com)   
 
+![Image text](https://github.com/shijuuu/hexo-theme-mokusei/blob/master/asset/previ.png)
+
+
 ## 安装
 
 ```
