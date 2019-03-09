@@ -1,13 +1,4 @@
-<div class="column-head extra-padding" id="<%- theme.ifsparticle ? 'fallEle' : ''%>" style="background-image: url(<%- theme.banner %>)">
-    <h2 class="column-title fadeToBottom">
-        <%= page.category %>
-    </h2>
-</div>
-<div id="con-wrap">
-    <div class="content fadeToTop">
-        <% page.posts.each(function(item){ %>
-            <%- partial('_partial/article', {item: item}) %>
-        <% }) %>
-    </div>
-</div>
-<%- partial('_partial/pagination') %>
+<h3 class="article-column-title">分类<span><%= page.category %></span>下的文章</h3>
+<% page.posts.each(function(item){ %>
+    <%- partial('_partial/article', {item: item}) %>
+<% }) %>

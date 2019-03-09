@@ -3,44 +3,57 @@
 // ------------------------------
 
 .sidebar
-    position absolute
-    top 0
-    left 0
-    width 250px
-    height 100%
-    overflow auto
-    background-color $bar_color
-    border(right, 1px solid #0a0a0a)
-    > ul
-        > li
-            position relative
-            border(bottom, 1px solid #0a0a0a)
-            font-size 18px
-            a
-                i
-                    padding-right 10px
-                display block
-                font-size 18px
-                padding 25px 50px
-                color #606060
-                text-align right
-                transition()
-                span
-                    word-break keep-all
-                &:hover
-                &.active
-                    @extend .nav_active
-                    + span
-                        color #fff
-            .drop-flag
-                position absolute
-                right 25px
-                top 30px
-                color #606060
-            ul
-                background-color #151515
-                a
-                    font-size 16px
-
-
-
+    width 150px
+    padding 0px 50px 50px 50px
+    font-size 14px
+    &>div
+        margin-bottom 40px
+    .widget-title
+        padding-bottom 20px
+        font-size 20px
+        color $theme_color
+    .widget-tags
+    .widget-categories
+        a
+            color #595959
+            transition(color)
+            &:hover
+                color #667800
+    .widget-late
+        a
+            display block
+            padding 10px 0px
+            border-bottom 1px dotted $border_color
+            color #595959
+            transition(color)
+            &:hover
+                color #667800
+    .widget-categories
+        li
+            padding 5px 0px
+        .category-list-count
+            &::before
+                content "（"
+            &::after
+                content "）"
+    input::-webkit-search-cancel-button
+        display none
+    input[type=search]::-ms-clear
+        display none
+    .widget-search
+        input[type="search"]
+            width 100%
+            height 30px
+            font-size: $text_size
+            color $text_color
+            padding 20px 20px
+            background none
+            border none
+            outline none
+            -webkit-appearance none
+            border(all, 1px solid #595959)
+            transition()
+            &:hover
+                border-color #667800
+    ::-moz-placeholder
+        color: #595959

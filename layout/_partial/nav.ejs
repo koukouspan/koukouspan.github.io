@@ -1,0 +1,12 @@
+<nav class="nav">
+    <a href="javascript:void(0)" class="mobile-menu" style="display: none;"><img src="/imgs/menu.png"/> 菜单栏</a>
+    <ul>
+        <% for (var i in theme.menu){ %>
+            <li>
+                <a href="<%- url_for(theme.menu[i].url) %>" class="<%- is_current(url_for(theme.menu[i].url)) ? 'active' : '' %>">
+                    <span><%= i %></span>
+                </a>
+            </li>
+        <% } %>
+    </ul>
+</nav>

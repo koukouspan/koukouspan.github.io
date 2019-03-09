@@ -1,31 +1,50 @@
-<article class="article">
-    <div class="article-wrap">
-        <h2 class="article-title cl">
-            <a href="<%- config.root %><%- item.path %>" title="<%- item.title ? item.title : "Empty title" %>"><%- item.title ? item.title : "Empty title" %></a>
-        </h2>
-        <div class="article-extra">
-            <div class="article-time cl">
-                <i class="fa fa-calendar"></i>
-                <%= item.date.format(config.date_format) %>
-            </div>
-        </div>
-        <div class="article-description">
-            <%
-                var str;
+<article class="<%- is_archive() ? 'archive' : 'article' %>">
+    <h2 class="article-title cl">
+        <a href="<%- config.root %><%- item.path %>" title="<%- item.title ? item.title : 'Empty title' %>"><%- item.title ? item.title : "Empty title" %></a>
+        <small class="article-time"><%= item.date.format(config.date_format) %></small>
+    </h2>
+    <div class="article-con">
+        <%
+            var str;
+            if(is_home()||is_tag()||is_category()){
                 if(item.excerpt)
                     str = item.excerpt;
                 else
                     str = item.content;
-            %>
-            <%- str %>
-        </div>
-        <a href="<%- config.root %><%- item.path %>" class="more-link"><%= __('more') %> &gt;&gt;</a>
-        <div class="article-tags">
-            <ul class="tags-list cl">
-                <%for(var i=0; i< item.tags.data.length; i++){%>
-                <li><a href="/tags/<%= item.tags.data[i].name %>/"><i class="fa fa-tag"></i><%= item.tags.data[i].name %></a></li>
-                <%}%>
-            </ul>
+            }
+            if(is_post()||is_page()){
+                str = item.content;
+            }
+        %>
+        <%- str %>
+    </div>
+    <% if(is_home()){ %>
+    <a href="<%- config.root %><%- item.path %>" class="article-more"><%= __('more') %> &gt;&gt;</a>
+    <% } %>
+    <% if(is_post()){ %>
+    <div class="article-navgition">
+        <div class="navgition-wrap">
+            <% if(item.prev){ %>
+                <div class="navgition-prev">
+                    <h2 class="navgition-title"><%= __('prev') %>: <a href="<%- url_for(item.prev.path) %>"> <%- item.prev.title ? item.prev.title : 'Empty title' %> </a></h2>
+                </div>
+            <% }else{ %>
+                <div class="navgition-prev">
+                    <h2 class="navgition-title"><%= __('prev') %>: <a href="javascript:void(0);">暂无</a></h2>
+                </div>
+            <% } %>
+
+            <% if(item.next){ %>
+                <div class="navgition-next">
+                    <h2 class="navgition-title"><%= __('next') %>: <a href="<%- url_for(item.next.path) %>"><%- item.next.title ? item.next.title : 'Empty title' %> </a></h2>
+                </div>
+            <% }else{ %>
+                <div class="navgition-next">
+                    <h2 class="navgition-title"><%= __('next') %>: <a href="javascript:void(0);">暂无</a></h2>
+                </div>
+            <% } %>
         </div>
     </div>
+    <% } %>
+    <%- partial('_partial/comment') %>
 </article>

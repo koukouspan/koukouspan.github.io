@@ -1,10 +1,10 @@
-search: search
-tags: tags
-categories: categories
-focusMode: focus mode
-returnTop: Back to top
+search: Search
+recent: Recent
+tags: Tags
+categories: Categories
 more: more
-prev: prev
-next: next
-archive: archive
-catelog: catelog
+prevpage: Previous page
+nextpage: Next page
+prev: Prev
+next: Next
+archive: Archive

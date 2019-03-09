@@ -2,38 +2,22 @@
 name: Mokusei
 description: 站点描述
 favicon:
-banner: /imgs/head.jpg
 rss:  
 
 # navigation
 menu:
   主页:
     url: /
-    icon: home
-    iconType: fa
   归档:
     url: /archives/
-    icon: archive
-    iconType: fa
-# Social account
-account:
-  github:
-    url: /
-    icon: github
-    iconType: fa
-  mail:
-    url: /
-    icon: envelope
-    iconType: fa
-  twitter:
-    url: /
-    icon: twitter
-    iconType: fa
+  关于:
+    url: /about/
 
-  # Comment system
+# Comment system
 comment:
   disqus:
     shortname:  
-  
-  # Features
-ifsparticle:  true
+
+# Slidebar
+widgetArticle:
+  amount: 5
