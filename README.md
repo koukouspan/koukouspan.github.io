@@ -3,9 +3,6 @@
 
 [预览](https://blog.shijukun.com)   
 
-![Image text](https://github.com/shijuuu/hexo-theme-mokusei/blob/master/asset/previ.png)
-
-
 ## 安装
 
 ```
@@ -19,11 +16,3 @@ git clone https://github.com/shijuuu/hexo-theme-mokusei.git themes/Mokusei
 cd themes/mokusei
 git pull
 ```
-
-## 问题提交
-
-[ISSUE](https://github.com/shijuuu/hexo-theme-mokusei/issues/)
-
-## 其他
-
-主题内使用图片素材均来自网络，如有侵犯了您的权利，请告知删除。

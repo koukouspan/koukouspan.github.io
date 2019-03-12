@@ -7,7 +7,17 @@
 		<!-- 头部 -->
 		<%- partial('_partial/header',{}, {cache: true}) %>
 		<!-- 内容 -->
-		<%- partial('_partial/content',{}, {cache: true}) %>
+		<div class="content-box">
+			<%- partial('_partial/sidebar') %>
+			<div class="content-article">
+				<%- partial('_partial/nav') %>
+				<div class="content-article-box">
+					<%- body %>
+				</div>
+				<%- partial('_partial/pagination') %>
+			</div>
+			
+		</div>
 		<!-- 底部 -->
 		<%- partial('_partial/footer',{}, {cache: true}) %>
 	</div>
