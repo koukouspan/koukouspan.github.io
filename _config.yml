@@ -16,7 +16,7 @@ menu:
 # Comment system
 comment:
   disqus:
-    shortname:  
+    shortname: shiju
 
 # Slidebar
 widgetArticle:
