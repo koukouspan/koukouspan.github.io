@@ -3,8 +3,9 @@
 
 [预览](https://blog.shijukun.com)   
 
-## 安装
+![p](https://raw.githubusercontent.com/shijuuu/hexo-theme-mokusei/master/other/p.jpg)
 
+## 安装
 
 
 ```
