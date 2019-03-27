@@ -1,20 +1,55 @@
 <div class="sidebar">
-	<div class="widget-search">
-		<h2 class="widget-title"><%= __('search') %></h2>
-		<%- search_form({'class':'search','text': __('search')}) %>
+	<div class="widget-me">
+			<h2 class="me-name">
+					<a href="<%- config.root %>"><%= theme.name %></a>
+					<small><%= theme.description %></small>
+			</h2>
+			<div class="me-avatar">
+					<a href="<%- config.root %>"><img src="<%= theme.meAvatar %>"/></a>
+			</div>
 	</div>
-	<% if(site.posts.length){ %>
-    <div class="widget-late">
-		<h2 class="widget-title"><%= __('recent') %></h2>
-		<%- list_posts({amount: theme.widgetArticle.amount}) %>
-	</div>
-	<% } %>
-	<div class="widget-tags">
-		<h2 class="widget-title"><%= __('tags') %></h2>
-		<%- tagcloud({min_font: 10}) %>
-	</div>
-	<div class="widget-categories">
-		<h2 class="widget-title"><%= __('categories') %></h2>
-		<%- list_categories() %>
+	<div class="sidebar-wrap">
+		<div class="widget-account">
+				<ul>
+					<% for (var i in theme.accountList){ %>
+						<li>
+								<a href="<%- url_for(theme.accountList[i].url) %>">
+										<i class="fa fa-<%= theme.accountList[i].icon %>"></i>
+								</a>
+						</li>
+					<% } %>
+				</ul>
+		</div>
+		<div class="widget-nav">
+				<nav class="nav-list">
+						<ul>
+								<% for (var i in theme.menu){ %>
+										<li>
+												<a href="<%- url_for(theme.menu[i].url) %>" class="<%- is_current(url_for(theme.menu[i].url)) ? 'active' : '' %>">
+														<span><%= i %></span>
+												</a>
+										</li>
+								<% } %>
+						</ul>
+				</nav>
+		</div>
+		<div class="widget-search">
+			<h2 class="widget-title"><%= __('search') %></h2>
+			<%- search_form({'class':'search','text': __('search')}) %>
+		</div>
+		<% if(site.posts.length){ %>
+			<div class="widget-late">
+			<h2 class="widget-title"><%= __('recent') %></h2>
+			<%- list_posts({amount: theme.widgetArticle.amount}) %>
+		</div>
+		<% } %>
+		<div class="widget-tags">
+			<h2 class="widget-title"><%= __('tags') %></h2>
+			<%- tagcloud({min_font: 10}) %>
+		</div>
+		<div class="widget-categories">
+			<h2 class="widget-title"><%= __('categories') %></h2>
+			<%- list_categories() %>
+		</div>
 	</div>
 </div>

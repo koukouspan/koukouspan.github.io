@@ -5,9 +5,13 @@
     flex 1
     height 100%
     overflow hidden
+    .banner
+        height 150px
+        background-position center center
+        background-repeat no-repeat
+        background-size cover
     .content-article-box
-        padding $wrap_margin
-        background rgba(255,255,255,0.9)
+        padding 60px
     .article
         margin-bottom 50px
     .article-time
@@ -20,7 +24,7 @@
         padding-bottom 10px
         border-bottom 1px solid #dadada
         margin-bottom 40px
-        font-size 28px
+        font-size 32px
     .article-title a
         font-weight bold
         color $text_color
@@ -140,18 +144,24 @@
             a
                 color $text_color
     .pagination
-        margin 50px 0px
+        border-top 1px solid #dadada
+        border-bottom 1px solid #dadada
+        padding 0px 50px
         .current
-            color $theme_color
+            color #fff
+            background-color $theme_color
         span
         a
             display inline-block
             font-size 18px
-            padding 10px 30px 10px 0px
+            border-right 1px solid #dadada
+            padding 20px
             color #4e4e4e
             transition()
             &:hover
-                color $theme_color
+                color #fff
+                background-color $theme_color
+                
     .article-column-title
         padding-bottom 20px
         border-bottom 1px solid #dadada

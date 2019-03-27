@@ -3,15 +3,67 @@
 // ------------------------------
 
 .sidebar
-    width 150px
-    padding 0px 50px 50px 50px
+    width 300px
     font-size 14px
-    &>div
-        margin-bottom 40px
+    background-color #000
+    text-align right
+    .sidebar-wrap
+        padding 50px
+        &>div
+            margin-bottom 40px
     .widget-title
         padding-bottom 20px
         font-size 20px
         color $theme_color
+        font-weight normal
+    .widget-me
+        padding 43px 50px
+        word-break break-all
+        box-sizing border-box
+        border-bottom 1px solid #151515
+        display flex
+        .me-name
+            flex 1
+            margin-right 20px
+            a
+                color #fff
+                font-size 28px
+            small
+                display block
+                color #999
+                font-size 14px
+        .me-avatar
+            width 60px
+            img
+                width 100%
+                border-radius 50%
+                transition()
+                &:hover
+                    transform rotate(360deg)
+    .widget-account
+        font-size 24px
+        ul
+            li
+                display inline-block
+                text-align right
+                margin-left 20px
+        a
+            color #fff
+            i
+                transition()
+                &:hover
+                    transform rotate(360deg)
+    .widget-nav
+        .nav-list
+            li
+                a
+                    color #818181
+                    display block
+                    font-size 18px
+                    padding 10px 0px;
+                    border-bottom 1px solid #151515
+                    &.active
+                        color #fff
     .widget-tags
     .widget-categories
         a
@@ -44,6 +96,7 @@
         input[type="search"]
             width 100%
             height 30px
+            text-align right
             font-size: $text_size
             color $text_color
             padding 20px 20px

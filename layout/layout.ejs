@@ -4,22 +4,21 @@
 
 <body>
 	<div class="body-box">
-		<!-- 头部 -->
-		<%- partial('_partial/header',{}, {cache: true}) %>
 		<!-- 内容 -->
 		<div class="content-box">
 			<%- partial('_partial/sidebar') %>
 			<div class="content-article">
-				<%- partial('_partial/nav') %>
+				<div class="banner" style="background-image: url(<%= theme.headerImg %>)"></div>
 				<div class="content-article-box">
 					<%- body %>
 				</div>
 				<%- partial('_partial/pagination') %>
+				<%- partial('_partial/footer',{}, {cache: true}) %>
+				
 			</div>
 			
 		</div>
-		<!-- 底部 -->
-		<%- partial('_partial/footer',{}, {cache: true}) %>
+		
 	</div>
 </body>
 </html>

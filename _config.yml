@@ -1,8 +1,30 @@
 # site
-name: Mokusei
+name: Shiju
 description: 站点描述
 favicon:
 rss:  
+
+# img
+headerImg: /imgs/header.jpg
+
+# me
+meAvatar: /imgs/avatar.jpeg
+
+# account list
+accountList:
+  github:
+    url: /2112
+    icon: github
+  facebook:
+    url: /23
+    icon: facebook
+  google:
+    url: /asd
+    icon: google
+  instagram:
+    url: /sdasdds
+    icon: instagram
+    
 
 # navigation
 menu:
