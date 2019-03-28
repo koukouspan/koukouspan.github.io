@@ -13,7 +13,7 @@
 				<ul>
 					<% for (var i in theme.accountList){ %>
 						<li>
-								<a href="<%- url_for(theme.accountList[i].url) %>">
+								<a href="<%- url_for(theme.accountList[i].url) %>" target="_blank">
 										<i class="fa fa-<%= theme.accountList[i].icon %>"></i>
 								</a>
 						</li>

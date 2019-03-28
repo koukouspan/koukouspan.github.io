@@ -14,11 +14,15 @@
 				</div>
 				<%- partial('_partial/pagination') %>
 				<%- partial('_partial/footer',{}, {cache: true}) %>
-				
 			</div>
-			
 		</div>
-		
 	</div>
+	<%
+		if(theme.searchType) {
+	%>
+		<%- partial('_partial/search') %>
+	<%
+		}
+	%>
 </body>
 </html>

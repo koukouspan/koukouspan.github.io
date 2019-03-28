@@ -1,5 +1,5 @@
 # site
-name: Shiju
+name: 桂花
 description: 站点描述
 favicon:
 rss:  
@@ -43,3 +43,7 @@ comment:
 # Slidebar
 widgetArticle:
   amount: 5
+
+# search
+# 0-Google  1-local
+searchType: 1
