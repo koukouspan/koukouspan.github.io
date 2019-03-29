@@ -11,9 +11,17 @@
         background-repeat no-repeat
         background-size cover
     .content-article-box
-        padding 60px
+        // padding 60px
     .article
-        margin-bottom 50px
+        padding 30px 50px
+        &:nth-of-type(odd)
+            background-color #f7f7f7
+        border-bottom 1px dotted #dadada
+    .article-post
+        padding 50px
+        border-bottom none
+        .article-title
+            font-size 32px !important
     .article-time
         float right
         font-size 16px
@@ -21,12 +29,9 @@
         color $text_color_description
     .article-title
         line-height 50px
-        padding-bottom 10px
-        border-bottom 1px solid #dadada
-        margin-bottom 40px
-        font-size 32px
+        font-size 26px
     .article-title a
-        font-weight bold
+        font-weight normal
         color $text_color
         transition()
         &:hover
@@ -40,8 +45,7 @@
             margin 10px 0px
             word-break break-all
         h1, h2, h3, h4, h5,h6
-            margin 20px 0px
-            padding-bottom 20px
+            margin 30px 0px
             border(bottom)
         h1
             font-size 1.5em
