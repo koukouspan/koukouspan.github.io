@@ -12,11 +12,16 @@
 				<div class="content-article-box">
 					<%- body %>
 				</div>
-				<%- partial('_partial/pagination') %>
+				<%
+					if(!(is_post()||is_page())){
+				%>
+					<%- partial('_partial/pagination') %>
+				<%
+					}
+				%>
 				<%- partial('_partial/footer',{}, {cache: true}) %>
 				
 			</div>
-			
 		</div>
 		
 	</div>

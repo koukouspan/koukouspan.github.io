@@ -1,4 +1,4 @@
-<article class="<%- is_archive() ? 'archive' : 'article' %>">
+<article class="article <%- is_archive() ? 'archive' : '' %> <%- is_post()||is_page() ? 'article-post' : '' %>">
     <h2 class="article-title cl">
         <a href="<%- config.root %><%- item.path %>" title="<%- item.title ? item.title : 'Empty title' %>"><%- item.title ? item.title : "Empty title" %></a>
         <small class="article-time"><%= item.date.format(config.date_format) %></small>
@@ -6,21 +6,12 @@
     <div class="article-con">
         <%
             var str;
-            if(is_home()||is_tag()||is_category()){
-                if(item.excerpt)
-                    str = item.excerpt;
-                else
-                    str = item.content;
-            }
             if(is_post()||is_page()){
                 str = item.content;
             }
         %>
         <%- str %>
     </div>
-    <% if(is_home()){ %>
-    <a href="<%- config.root %><%- item.path %>" class="article-more"><%= __('more') %> &gt;&gt;</a>
-    <% } %>
     <% if(is_post()){ %>
     <div class="article-navgition">
         <div class="navgition-wrap">
