@@ -6,35 +6,28 @@
     .body-box
         width 100%
     .sidebar
-        display none
-    .content-article
-        .content-article-box
-            padding $wrap_margin_media
-        .pagination
-            margin $wrap_margin_media
-    .footer
-        text-align center
-    .nav
-        height auto
-        background-color #dadada
-        .mobile-menu
-            text-align center
-            display block !important
-            background-color $theme_color
-            color #fff
-            img
-                width 20px
-                vertical-align middle
-            
-        ul
+        width 250px
+        position absolute
+        top 0
+        left 0
+        height 100%
+        overflow hidden
+        .widget-account
+        .widget-search
+        .widget-late
+        .widget-tags
+        .widget-categories
             display none
-            li
-                float none
-                display block
-                a
-                    color #333
-                    &.active
-                        color #fff
-                        background-color $theme_color
+    .content-article
+        position absolute
+        top 0
+        left 0px
+        width 100%
+        .banner
+            .mobile-toggle
+                display block !important
+                margin 20px
+                color #fff
+                font-size 24px
 
 
