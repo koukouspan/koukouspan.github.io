@@ -7,7 +7,7 @@
 Mokusei是一款Hexo下的响应式博客主题，致力于提供纯粹的阅读环境及注重内容展现，保留了文章阅读所必要的一些元素。如果你对本主题有疑问/建议/BUG，请移步
 [ISSUE](https://github.com/shijuuu/hexo-theme-mokusei/issues)。
 
-[预览](https://blog.shijukun.com)  | [版本历史](https://github.com/shijuuu/hexo-theme-mokusei/blob/master/other/history.md) | [WIKI文档](https://github.com/shijuuu/hexo-theme-mokusei/wiki)
+[预览](https://blog.shijukun.com)  | [版本历史](https://github.com/shijuuu/hexo-theme-mokusei/blob/master/other/history.md) | [使用文档](https://github.com/shijuuu/hexo-theme-mokusei/wiki)
  
 ## 起步
 
