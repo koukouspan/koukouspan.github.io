@@ -1,12 +1,9 @@
 <h1 align="center">Mokusei</h1>
-<p align="center">桂花是一个深色的Hexo主题，它致力于提供安静的阅读环境</p>
+<p align="center">Mokusei是一款Hexo下的响应式博客主题。，它致力于提供安静纯粹的阅读环境</p>
 
 [预览](https://blog.shijukun.com)   
 
-![p](https://raw.githubusercontent.com/shijuuu/hexo-theme-mokusei/master/other/p.jpg)
-
 ## 安装
-
 
 ```
 git clone https://github.com/shijuuu/hexo-theme-mokusei.git themes/Mokusei
