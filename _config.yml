@@ -1,5 +1,5 @@
 # site
-name: Shiju
+name: 站点
 description: 站点描述
 favicon:
 rss:  
@@ -13,16 +13,16 @@ meAvatar: /imgs/avatar.jpeg
 # account list
 accountList:
   github:
-    url: /2112
+    url: /
     icon: github
   facebook:
-    url: /23
+    url: /
     icon: facebook
   google:
-    url: /asd
+    url: /
     icon: google
   instagram:
-    url: /sdasdds
+    url: /
     icon: instagram
     
 
@@ -38,7 +38,7 @@ menu:
 # Comment system
 comment:
   disqus:
-    shortname:  
+    shortname: 
 
 # Slidebar
 widgetArticle:
