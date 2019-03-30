@@ -23,6 +23,9 @@ cd themes/mokusei
 git pull
 ```
 
+## 贡献
+
+如果你有更好的建议，可以在 ISSUE 下发表亦或给我提 Pull Requests。
 
 
 
