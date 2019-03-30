@@ -8,7 +8,9 @@
 		<div class="content-box">
 			<%- partial('_partial/sidebar') %>
 			<div class="content-article">
-				<div class="banner" style="background-image: url(<%= theme.headerImg %>)"></div>
+				<div class="banner" style="background-image: url(<%= theme.headerImg %>)">
+					<i class="fa fa-reorder mobile-toggle" style="display:none;"></i>
+				</div>
 				<div class="content-article-box">
 					<%- body %>
 				</div>
